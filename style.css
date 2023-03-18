@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+  border: 0;
+}
+
+*::-webkit-scrollbar {
+  width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #f5f5dc;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #e09145;
+  /* border: 3px solid #e09145; */
+}
+
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #e09145;
+  background: linear-gradient(135deg, #e09145, #17181d);
+  overflow: hidden;
+}
+
+img {
+  width: 10rem;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  color: #e09145;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: auto;
+}
+
+.card {
+  background: #17181d;
+  padding: 2rem;
+  color: #fff;
+  border-radius: 2rem;
+  width: 40rem;
+  max-height: fit-content;
+}
+
+.top {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.dictionary {
+  border-top: 0.13rem solid #e09145;
+  padding: 1rem;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.word {
+  font-size: 2rem;
+  margin-bottom: 0.3rem;
+}
+
+.mic {
+  animation: blink 1.2s linear infinite;
+  cursor: pointer;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.search-bar {
+  border: 0.23rem solid #e09145;
+  border-radius: 0.63rem;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  /* border-bottom: 2rem; */
+}
+.uil {
+  cursor: pointer;
+}
+
+input {
+  background: transparent;
+  color: #fff;
+}
+
+input:focus {
+  background: transparent;
+}
+
+.word-meaning {
+  margin-top: 2rem;
+}
+
+.meaning {
+  margin: 2rem 0;
+}
+
+.example {
+  border-left: 0.33rem solid #e09145;
+  padding-left: 1rem;
+  font-style: oblique;
+  color: #fcd9b8;
+}
+
+.err, .empty-input {
+  text-align: center;
+}
+
+/* *********FOR MOBILE SCREENS************ */
+
+@media screen and (max-width: 990px) {
+  body {
+    overflow: scroll;
+    overflow-x: hidden;
+    background: #17181d;
+  }
+  img {
+    width: 10rem;
+    margin: 2rem auto;
+  }
+
+  .word {
+    font-size: 2rem;
+  }
+
+  .card {
+    width: 100vw;
+    height: 100vh;
+    border-radius: none;
+    padding: 0.8rem;
+    position: relative;
+  }
+}
+
+

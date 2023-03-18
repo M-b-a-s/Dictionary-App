@@ -11,3 +11,10 @@ Yeah! I had to do a lot of research
 [Stack Overflow](https://stackoverflow.com/questions/51897342/play-audio-from-api-response-javascript)
 [FreeCodeCamp](https://forum.freecodecamp.org/t/chrome-uncaught-in-promise-domexception-the-element-has-no-supported-sources/462814/3)
 [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Using_Web_Audio_API)
+
+
+## Image
+[Undraw](undraw.co)
+
+## Icon
+[Iconscout](https://iconscout.com/)
